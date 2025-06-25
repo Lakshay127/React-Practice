@@ -10,12 +10,14 @@ function App() {
   //let counter = 15
 
   const addValue = () => {
-    //counter = counter + 1
-    setCounter(prevCounter => prevCounter + 1)
+    // counter = counter + 1
+    // setcounter(counter = counter + 1)
+    setCounter(prevCounter => prevCounter + 1)    
     setCounter(prevCounter => prevCounter + 1 )
     setCounter(prevCounter => prevCounter + 1)
     setCounter(prevCounter => prevCounter + 1)
     
+    // Made a arrow function, Took calls again and again by passing references, First the counter worked same steps so was called just once, now Refrence is passed. prevCounter name can be used any variable name. Takes previous state then update value. 
   }
 
   const removeValue = () => {
