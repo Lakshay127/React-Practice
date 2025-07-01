@@ -30,7 +30,7 @@ export class AuthService{
 
     async login({email, password}) {
         try {    
-            const session =  await this.account.createSession(email, password);
+            const session =  await this.account.createEmailPasswordSession(email, password);
             return session
         } catch (error) {
             console.log("Appwrite service :: login :: error", error);
